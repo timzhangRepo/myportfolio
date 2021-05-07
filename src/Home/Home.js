@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import {Button, createMuiTheme, Grid, ThemeProvider, Paper, Borders,} from "@material-ui/core";
-import style from './index.module.css';
+import styles from './index.module.css';
 import {themeDark} from '../Theme/ThemeDark';
+import {Typography} from "@material-ui/core";
 
 class Home extends Component {
     render() {
@@ -19,12 +20,11 @@ class Home extends Component {
                     <Grid Item xs={12}>
                         <Button variant="contained" style={{borderRadius:"20px"}}>check out my work in detail </Button>
                     </Grid>
-
                     <Grid Item>
-                        <h2>YONGKAI LIN</h2>
+                        <h2 className={styles.h2}>YONGKAI LIN</h2>
                     </Grid>
                     <Grid>
-                        <p>Recently graduated with an MFA in Production Design from Chapman University,
+                        <p className={styles.p}>Recently graduated with an MFA in Production Design from Chapman University,
                             I continue pursuing a career in Film and TV Art Department, currently based in Los Angeles.</p>
                     </Grid>
                     <Grid Item>

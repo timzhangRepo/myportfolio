@@ -5,7 +5,20 @@ body{
     border-radius:0;
 }
 .p{
-    font-family: Ebrima;
     margin:0 10% 0 10%;
     text-align:center;
+    color: #999999
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+.item{
+    padding:20px;
+}
+.name{
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom:0px;
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {themeDark} from "../Theme/ThemeDark";
 import {Button, Grid, ThemeProvider, Paper,} from "@material-ui/core";
+import { ImageList } from '@material-ui/core';
 
 class SetDesign extends Component {
     constructor() {
@@ -19,7 +20,6 @@ class SetDesign extends Component {
         return (
             <ThemeProvider theme={themeDark}>
                 <Paper style={InlineStyles.paper}>
-                    
                 </Paper>
             </ThemeProvider>
         );

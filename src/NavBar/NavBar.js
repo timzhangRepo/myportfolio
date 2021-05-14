@@ -13,7 +13,6 @@ export function navgationItems() {
             <NavLink activeClassName={styles.activeNavigationItem} to="/set-design">SET DESIGN</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/concept-art">CONCEPT ART</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHIC DESIGN</NavLink>
-            <NavLink activeClassName={styles.activeNavigationItem} to="/contact">CONTACT</NavLink>
         </div>
     )
 }

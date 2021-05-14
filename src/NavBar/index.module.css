@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    padding:0;
+    border-radius: 0;
+}
+.navbar{
+    padding:1rem 0 0 2rem;
+}
+.navgationItems>*{
+    margin-left:1rem;
+    color: #b0b0b0
+}
+.navgationItems *:hover {
+    color: white;
+}
+
+.activeNavigationItem{
+    color:white;
+}

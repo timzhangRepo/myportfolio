@@ -34,7 +34,7 @@ class NavBar extends Component
         }
         return (
             <ThemeProvider theme={themeDark}>
-                <Paper style={{background: '#111111'}}>
+                <Paper style={{background: '#111111'}} elevation={0} >
                     <BrowserRouter>
                         <div className={styles.navbar}>
                             <Grid

@@ -4,7 +4,6 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import styles from './index.module.css';
-import {themeDark} from '../Theme/ThemeDark';
 import YouTube from "react-youtube";
 import {NavLink} from "react-router-dom";
 
@@ -30,7 +29,6 @@ class Home extends Component {
                 backgroundColor: 'white'
             },
             paperStyle: {
-                height: "100vh",
                 background: "#111111"
             },
             opts:{
@@ -44,14 +42,15 @@ class Home extends Component {
             }
         }
         return (
-            <ThemeProvider theme={themeDark}>
-                <Paper style={InlineStyles.paperStyle}>
+            <div>
                     {/* Paper can make themeDark change */}
                     <Grid
                         container
                         direction="column"
                         justify="center"
                         alignItems="center"
+                        style={{border:'none'}}
+                        elevation={0}
                     >
                         <Grid item={true} xs={12} className={styles.item}>
                             <YouTube
@@ -87,8 +86,7 @@ class Home extends Component {
                             </Grid>
                         </Grid>
                     </Grid>
-                </Paper>
-            </ThemeProvider>
+            </div>
         );
     }
 }

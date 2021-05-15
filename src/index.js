@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import NavBar from './NavBar/NavBar';
 import './index.css';
+import { StylesProvider } from "@material-ui/core/styles";
 ReactDOM.render(
     <React.StrictMode>
         <NavBar/>

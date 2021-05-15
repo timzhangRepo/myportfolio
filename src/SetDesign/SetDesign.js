@@ -4,13 +4,11 @@ import GridList from '@material-ui/core/GridList';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import {COVERS} from '../Assets/ImageAssets'
 import styles from './index.module.css'
-
 class SetDesign extends Component {
     constructor(props) {
         super(props);
     }
     componentDidMount() {
-
     }
     render() {
         const InlineStyles = {
@@ -21,7 +19,6 @@ class SetDesign extends Component {
                 margin:'1rem'
             }
         }
-
         return (
             <div>
                 <Paper style={InlineStyles.paper} elevation={0} square={false} >
@@ -31,10 +28,9 @@ class SetDesign extends Component {
                             <GridListTile key={item.id} >
                                 <img src={item.src} className={styles.image}/>
                                 <GridListTileBar
-                                    title={item.title}>
+                                    title={item.title} style={{height:'100%',textAlign:'center' }}>
                                 </GridListTileBar>
                             </GridListTile>
-
                         ))}
                     </GridList>
                     </di>

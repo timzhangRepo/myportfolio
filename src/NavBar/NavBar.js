@@ -5,7 +5,6 @@ import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import SetDesign from "../SetDesign/SetDesign";
 import Home from "../Home/Home";
 import styles from './index.module.css';
-
 export function navgationItems() {
     return (
         <div className={styles.navgationItems}>

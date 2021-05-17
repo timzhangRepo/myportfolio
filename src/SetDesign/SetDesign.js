@@ -4,6 +4,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import {COVERS} from '../Assets/ImageAssets'
 import styles from './index.module.css'
+import Footer from '../Footer/Footer'
 
 class SetDesign extends Component {
     constructor(props) {

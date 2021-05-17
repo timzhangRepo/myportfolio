@@ -6,15 +6,13 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import styles from './index.module.css';
 import YouTube from "react-youtube";
 import {NavLink} from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 class Home extends Component {
     constructor() {
         super();
         this.state = {
             intro_video_id: 'EYJDIFxpssE',
-            youtube_channel: 'http://www.youtube.com/channel/UCCu-4MIbwuUDjwyLbRvuL7g',
-            instagram_channel: 'https://www.instagram.com/jazzyjoker3/',
-            email_address: 'mailto:linyongkai3@gmail.com',
         }
     }
 
@@ -67,23 +65,7 @@ class Home extends Component {
                                 in Film and TV Art Department, currently based in Los Angeles.</p>
                         </Grid>
                         <Grid item={true} xs={12} className={styles.item}>
-                            <Grid
-                                container
-                                direction="row"
-                                justify="center"
-                                alignItems="center"
-                                spacing={4}
-                            >
-                                <Grid item={true} xs={4}>
-                                    <a href={this.state.youtube_channel}><YouTubeIcon></YouTubeIcon></a>
-                                </Grid>
-                                <Grid item={true} xs={4}>
-                                    <a href={this.state.instagram_channel}><InstagramIcon></InstagramIcon></a>
-                                </Grid>
-                                <Grid item={true} xs={4}>
-                                    <a href={this.state.email_address}><MailOutlineIcon></MailOutlineIcon></a>
-                                </Grid>
-                            </Grid>
+                            <Footer/>
                         </Grid>
                     </Grid>
             </div>

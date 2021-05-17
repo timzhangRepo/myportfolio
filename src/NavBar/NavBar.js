@@ -12,7 +12,7 @@ export function navgationItems() {
             <NavLink activeClassName={styles.activeNavigationItem} exact to="/">HOME</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/set-design">SET DESIGN</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/concept-art">CONCEPT ART</NavLink>
-            <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHIC DESIGN</NavLink>
+            <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHICS DESIGN</NavLink>
         </div>
     )
 }
@@ -55,6 +55,7 @@ class NavBar extends Component
                         <Switch>
                             <Route exact path="/" component={Home}/>
                             <Route path="/set-design" component={SetDesign}/>
+                            <Route path="/concept-art" component={Gallary}/>
                             <Route path="/b1" component={Gallary}/>
                             <Route path="/w1" component={Gallary}/>
                             <Route path="/s1" component={Gallary}/>
@@ -62,6 +63,8 @@ class NavBar extends Component
                             <Route path="/a1" component={Gallary}/>
                             <Route path="/j1" component={Gallary}/>
                             <Route path="/i1" component={Gallary}/>
+                            <Route path="/i1" component={Gallary}/>
+                            <Route component={Home}/>
                         </Switch>
                     </BrowserRouter>
                 </Paper>

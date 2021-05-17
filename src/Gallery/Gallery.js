@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid/Grid';
-import {BRAIN_IN_A_VAT, WU_SONG_FIGHTS_THE_TIGER} from "../Assets/ImageAssets";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {BRAIN_IN_A_VAT, WU_SONG_FIGHTS_THE_TIGER, SUDANESE_RUINS, ELON_MUSK, THE_APARTMENT, JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, INCA_KEY, CONCEPT} from "../Assets/ImageAssets";
 import Footer from '../Footer/Footer'
 import styles from "../Home/index.module.css";
+import {STORIES} from '../Assets/TextAssets'
 
 class Gallery extends Component {
     constructor(props) {
@@ -29,12 +29,13 @@ class Gallery extends Component {
         else return (windowWidth-200);
     }
     findGallery=(ItemID)=>{
-        const MapGallery = {'/b1':BRAIN_IN_A_VAT,'/w1':WU_SONG_FIGHTS_THE_TIGER}
+        const MapGallery = {'/concept-art':CONCEPT,'/b1':BRAIN_IN_A_VAT,'/w1':WU_SONG_FIGHTS_THE_TIGER, '/e1': ELON_MUSK, '/a1':THE_APARTMENT, '/j1':JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, '/i1':INCA_KEY ,'/s1':SUDANESE_RUINS}
         return MapGallery[ItemID]
     }
     render() {
         const {ItemID} = this.state;
         const ImageItems = this.findGallery(ItemID);
+        const Text = STORIES[ItemID]
         return (
             <div>
                 {/*https://www.npmjs.com/package/react-lazy-load-image-component*/}
@@ -45,17 +46,23 @@ class Gallery extends Component {
                alignItems="center"
                >
                    <Grid item={true}>
-                       <h1>{/**这里放description**/}</h1>
+                       <h3>{Text.title}</h3>
+                   </Grid>
+                   <Grid item={true} style={{padding:'1rem 2rem 1rem 2rem'}}>
+                       <p className={styles.p}>{Text.src}</p>
+                   </Grid>
+                   <Grid item={true} style={{padding:'2rem'}}>
+                       <p className={styles.p}>{Text.extra}</p>
                    </Grid>
                    {
                        ImageItems.map((item)=>(
-                           <Grid item={true}>
+                           <Grid item={true} key={item.id}>
                                <img src={item.src} style={{width:this.getImageDisplaySize()}}/>
                            </Grid>
                        ))
                    }
-                   <Grid item={true} xs={12} style={{'margin-top':'2rem'}}>
-                       <p>MFA in Production Design from Chapman University, pursuing a career
+                   <Grid item={true} xs={12} style={{'margin':'2rem 0 1rem 0'}}>
+                       <p className={styles.p}>MFA in Production Design from Chapman University, pursuing a career
                            in Film and TV Art Department, currently based in Los Angeles.</p>
                    </Grid>
                    <Grid item={true}>
@@ -67,7 +74,6 @@ class Gallery extends Component {
         );
     }
 }
-
 Gallery.defaultProps = {
     itemID:'',
 }

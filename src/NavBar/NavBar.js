@@ -5,6 +5,7 @@ import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import SetDesign from "../SetDesign/SetDesign";
 import Home from "../Home/Home";
 import styles from './index.module.css';
+import Gallary from "../Gallary/Gallary";
 export function navgationItems() {
     return (
         <div className={styles.navgationItems}>
@@ -54,6 +55,7 @@ class NavBar extends Component
                         <Switch>
                             <Route exact path="/" component={Home}/>
                             <Route path="/set-design" component={SetDesign}/>
+                            <Route path="/brain-in-a-vat" component={Gallary}/>
                         </Switch>
                     </BrowserRouter>
                 </Paper>

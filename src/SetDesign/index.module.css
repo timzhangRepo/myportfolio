@@ -11,6 +11,13 @@ body{
     overflow:hidden;
     margin: 3rem;
 }
-.image{
+.GridListTileBar{
+    opacity: 0;
+    height:100% !important;
+    text-align:center;
+    cursor: pointer;
+}
 
+.GridListTileBar:hover{
+    opacity: 1;
 }

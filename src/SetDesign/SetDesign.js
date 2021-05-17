@@ -5,6 +5,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import {COVERS} from '../Assets/ImageAssets'
 import styles from './index.module.css'
 import Footer from '../Footer/Footer'
+import {NavLink} from "react-router-dom";
 
 class SetDesign extends Component {
     constructor(props) {
@@ -16,9 +17,8 @@ class SetDesign extends Component {
     handleResize = (e) => {
         this.setState({windowWidth: window.innerWidth});
     };
-    handleOnClick = (id) =>{
-        console.log(id);
-    }
+
+
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
     }
@@ -42,11 +42,16 @@ class SetDesign extends Component {
                     <div className={styles.content}>
                         <GridList cellHeight={400} cols={numCol}>
                             {COVERS.map((item) => (
-                                <GridListTile key={item.id} onClick={()=>this.handleOnClick(item.id)}>
+                                <GridListTile key={item.id}>
                                     <img src={item.src}/>
+                                    <NavLink to={{
+                                        pathname: '/'+item.id,
+                                        state: {ItemID: item.id}
+                                    }}>
                                     <GridListTileBar className={styles.GridListTileBar}
                                         title={item.title}>
                                     </GridListTileBar>
+                                    </NavLink>
                                 </GridListTile>
                             ))}
                         </GridList>

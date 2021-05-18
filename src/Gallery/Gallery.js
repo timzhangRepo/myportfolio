@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Grid from '@material-ui/core/Grid/Grid';
-import {BRAIN_IN_A_VAT, WU_SONG_FIGHTS_THE_TIGER, SUDANESE_RUINS, ELON_MUSK, THE_APARTMENT, JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, INCA_KEY, CONCEPT} from "../Assets/ImageAssets";
+import {BRAIN_IN_A_VAT, WU_SONG_FIGHTS_THE_TIGER, SUDANESE_RUINS, ELON_MUSK, THE_APARTMENT, JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, INCA_KEY, CONCEPT, GRAPHICS} from "../Assets/ImageAssets";
 import Footer from '../Footer/Footer'
 import styles from "../Home/index.module.css";
 import {STORIES} from '../Assets/TextAssets'
@@ -11,6 +11,11 @@ class Gallery extends Component {
         this.state = {
             ItemID: props.location.pathname,
             windowWidth: window.innerWidth,
+        }
+    }
+    componentDidUpdate (prevProps, prevState) {
+        if (prevProps.location.pathname !== this.props.location.pathname) {
+            this.setState({ItemID: this.props.location.pathname});
         }
     }
     handleResize = (e) => {
@@ -29,7 +34,7 @@ class Gallery extends Component {
         else return (windowWidth-200);
     }
     findGallery=(ItemID)=>{
-        const MapGallery = {'/concept-art':CONCEPT,'/b1':BRAIN_IN_A_VAT,'/w1':WU_SONG_FIGHTS_THE_TIGER, '/e1': ELON_MUSK, '/a1':THE_APARTMENT, '/j1':JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, '/i1':INCA_KEY ,'/s1':SUDANESE_RUINS}
+        const MapGallery = {'/graphic-design':GRAPHICS, '/concept-art':CONCEPT,'/b1':BRAIN_IN_A_VAT,'/w1':WU_SONG_FIGHTS_THE_TIGER, '/e1': ELON_MUSK, '/a1':THE_APARTMENT, '/j1':JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, '/i1':INCA_KEY ,'/s1':SUDANESE_RUINS}
         return MapGallery[ItemID]
     }
     render() {

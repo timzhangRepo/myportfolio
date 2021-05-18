@@ -32,5 +32,6 @@ export const STORIES = {
     },
     '/i1': {id: 'i1', src: '', extra:"", title: 'INCA KEY / 印卡钥匙'},
     '/concept-art': {id: 'c1', src: '', extra:"", title: ''},
+    '/graphic-design':{id:'g1',src:'',extra:'',title:''},
 }
 

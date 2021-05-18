@@ -40,6 +40,7 @@ class Home extends Component {
             }
         }
         return (
+
             <div>
                     {/* Paper can make themeDark change */}
                     <Grid
@@ -63,6 +64,9 @@ class Home extends Component {
                         <Grid item={true} xs={12}>
                             <p className={styles.p}>MFA in Production Design from Chapman University, pursuing a career
                                 in Film and TV Art Department, currently based in Los Angeles.</p>
+                        </Grid>
+                        <Grid item={true} xs={12}>
+                            <p>linyongkai3@gmail.com</p>
                         </Grid>
                         <Grid item={true} xs={12} className={styles.item}>
                             <Footer/>

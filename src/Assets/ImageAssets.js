@@ -92,10 +92,28 @@ import CONCEPT4 from '../Assets/CONCEPT ART/4.webp'
 import CONCEPT5 from '../Assets/CONCEPT ART/5.jpg'
 
 /*GRAPHCS DESIGN*/
-import GRAPHIC1 from '../Assets/GRAPHICS DESIGN/1.webp'
+import GRAPHICS1 from '../Assets/GRAPHICS DESIGN/1.webp'
+import GRAPHICS2 from '../Assets/GRAPHICS DESIGN/2.webp'
+import GRAPHICS3 from '../Assets/GRAPHICS DESIGN/3.webp'
+import GRAPHICS4 from '../Assets/GRAPHICS DESIGN/4.webp'
+import GRAPHICS5 from '../Assets/GRAPHICS DESIGN/5.webp'
+import GRAPHICS6 from '../Assets/GRAPHICS DESIGN/6.jpg'
+import GRAPHICS7 from '../Assets/GRAPHICS DESIGN/7.jpg'
+import GRAPHICS8 from '../Assets/GRAPHICS DESIGN/8.webp'
+import GRAPHICS9 from '../Assets/GRAPHICS DESIGN/9.webp'
+import GRAPHICS10 from '../Assets/GRAPHICS DESIGN/10.webp'
 
 export const GRAPHICS = [
-    {id:'g1', src:GRAPHIC1, title:'1'},
+    {id:'g1', src:GRAPHICS1, title:'1'},
+    {id:'g2', src:GRAPHICS2, title:'2'},
+    {id:'g3', src:GRAPHICS3, title:'3'},
+    {id:'g4', src:GRAPHICS4, title:'4'},
+    {id:'g5', src:GRAPHICS5, title:'5'},
+    {id:'g6', src:GRAPHICS6, title:'6'},
+    {id:'g7', src:GRAPHICS7, title:'7'},
+    {id:'g8', src:GRAPHICS8, title:'8'},
+    {id:'g9', src:GRAPHICS9, title:'9'},
+    {id:'g10', src:GRAPHICS10, title:'10'},
 ]
 export const CONCEPT = [
     {id:'c1', src:CONCEPT1, title:'1'},

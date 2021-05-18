@@ -46,7 +46,7 @@ class SetDesign extends Component {
                                     <img src={item.src}/>
                                     <NavLink to={{
                                         pathname: '/'+item.id,
-                                        state: {ItemID: item.id}
+                                        state: {ItemID: '/'+item.id}
                                     }}>
                                     <GridListTileBar className={styles.GridListTileBar}
                                         title={item.title}>

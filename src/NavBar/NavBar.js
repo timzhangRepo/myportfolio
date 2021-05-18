@@ -5,13 +5,13 @@ import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import SetDesign from "../SetDesign/SetDesign";
 import Home from "../Home/Home";
 import styles from './index.module.css';
-import Gallary from "../Gallery/Gallery";
+import Gallery from "../Gallery/Gallery";
 export function navgationItems() {
     return (
         <div className={styles.navgationItems}>
             <NavLink activeClassName={styles.activeNavigationItem} exact to="/">HOME</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/set-design">SET DESIGN</NavLink>
-            <NavLink activeClassName={styles.activeNavigationItem} to="/concept-art">CONCEPT ART</NavLink>
+            <NavLink activeClassName={styles.activeNavigationItem} to="/concept-art" >CONCEPT ART</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHICS DESIGN</NavLink>
         </div>
     )
@@ -55,15 +55,15 @@ class NavBar extends Component
                         <Switch>
                             <Route exact path="/" component={Home}/>
                             <Route path="/set-design" component={SetDesign}/>
-                            <Route path="/concept-art" component={Gallary}/>
-                            <Route path="/b1" component={Gallary}/>
-                            <Route path="/w1" component={Gallary}/>
-                            <Route path="/s1" component={Gallary}/>
-                            <Route path="/e1" component={Gallary}/>
-                            <Route path="/a1" component={Gallary}/>
-                            <Route path="/j1" component={Gallary}/>
-                            <Route path="/i1" component={Gallary}/>
-                            <Route path="/i1" component={Gallary}/>
+                            <Route path="/concept-art"  component={Gallery}/>
+                            <Route path="/graphic-design"  component={Gallery}/>
+                            <Route path="/b1" component={Gallery}/>
+                            <Route path="/w1" component={Gallery}/>
+                            <Route path="/s1" component={Gallery}/>
+                            <Route path="/e1" component={Gallery}/>
+                            <Route path="/a1" component={Gallery}/>
+                            <Route path="/j1" component={Gallery}/>
+                            <Route path="/i1" component={Gallery}/>
                             <Route component={Home}/>
                         </Switch>
                     </BrowserRouter>

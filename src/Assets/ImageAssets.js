@@ -90,6 +90,7 @@ import CONCEPT2 from '../Assets/CONCEPT ART/2.jpg'
 import CONCEPT3 from '../Assets/CONCEPT ART/3.webp'
 import CONCEPT4 from '../Assets/CONCEPT ART/4.webp'
 import CONCEPT5 from '../Assets/CONCEPT ART/5.jpg'
+import CONCEPT6 from '../Assets/CONCEPT ART/6.webp'
 
 /*GRAPHCS DESIGN*/
 import GRAPHICS1 from '../Assets/GRAPHICS DESIGN/1.webp'
@@ -121,6 +122,7 @@ export const CONCEPT = [
     {id:'c3', src:CONCEPT3, title:'3'},
     {id:'c4', src:CONCEPT4, title:'4'},
     {id:'c5', src:CONCEPT5, title:'5'},
+    {id:'c6',src:CONCEPT6, title:'6'}
 ]
 
 export const STORY = [
@@ -179,6 +181,7 @@ export const ELON_MUSK = [
     {id:'e2', src:ELON2, title:'ELON MUSK / 伊隆马斯克/pic2'},
     {id:'e3', src:ELON3, title:'ELON MUSK / 伊隆马斯克/pic3'},
     {id:'e4', src:ELON4, title:'ELON MUSK / 伊隆马斯克/pic4'},
+    {id:'concept6', src:CONCEPT6, title:'ELON MUSK / 伊隆马斯克/pic4'},
     {id:'e5', src:ELON5, title:'ELON MUSK / 伊隆马斯克/pic5'},
     {id:'e6', src:ELON6, title:'ELON MUSK / 伊隆马斯克/pic6'},
     {id:'e7', src:ELON7, title:'ELON MUSK / 伊隆马斯克/pic7'},

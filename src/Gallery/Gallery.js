@@ -34,7 +34,17 @@ class Gallery extends Component {
         else return (windowWidth-200);
     }
     findGallery=(ItemID)=>{
-        const MapGallery = {'/graphic-design':GRAPHICS, '/concept-art':CONCEPT,'/b1':BRAIN_IN_A_VAT,'/w1':WU_SONG_FIGHTS_THE_TIGER, '/e1': ELON_MUSK, '/a1':THE_APARTMENT, '/j1':JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW, '/i1':INCA_KEY ,'/s1':SUDANESE_RUINS}
+        const MapGallery = {
+            '/graphic-design': GRAPHICS,
+            '/concept-art': CONCEPT,
+            '/b1': BRAIN_IN_A_VAT,
+            '/w1': WU_SONG_FIGHTS_THE_TIGER,
+            '/e1': ELON_MUSK,
+            '/a1': THE_APARTMENT,
+            '/j1': JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW,
+            '/i1': INCA_KEY,
+            '/s1': SUDANESE_RUINS
+        }
         return MapGallery[ItemID]
     }
     render() {

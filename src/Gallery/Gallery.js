@@ -41,6 +41,18 @@ class Gallery extends Component {
         const {ItemID} = this.state;
         const ImageItems = this.findGallery(ItemID);
         const Text = STORIES[ItemID]
+        /*default*/
+        let InlineStyles = {
+            Grid_1:{padding:'1rem 2rem 1rem 2rem'},
+            Grid_2:{padding:'1rem 2rem 1rem 2rem'},
+        }
+        if(ItemID==='/graphic-design' || ItemID==='/concept-art'){
+            /*For Non-Set Design Pages*/
+            InlineStyles = {
+                Grid_1:{padding:'0'},
+                Grid_2:{padding:'0rem 2rem 1rem 2rem'},
+            }
+        }
         return (
             <div>
                <Grid
@@ -52,10 +64,10 @@ class Gallery extends Component {
                    <Grid item={true}>
                        <h3>{Text.title}</h3>
                    </Grid>
-                   <Grid item={true} style={{padding:'1rem 2rem 1rem 2rem'}}>
+                   <Grid item={true} style={InlineStyles.Grid_1}>
                        <p className={styles.p}>{Text.src}</p>
                    </Grid>
-                   <Grid item={true} style={{padding:'2rem'}}>
+                   <Grid item={true} style={InlineStyles.Grid_2}>
                        <p className={styles.p}>{Text.extra}</p>
                    </Grid>
                    {

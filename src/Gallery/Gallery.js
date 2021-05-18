@@ -43,7 +43,6 @@ class Gallery extends Component {
         const Text = STORIES[ItemID]
         return (
             <div>
-                {/*https://www.npmjs.com/package/react-lazy-load-image-component*/}
                <Grid
                container
                direction="column"

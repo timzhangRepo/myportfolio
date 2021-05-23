@@ -27,7 +27,6 @@ class Gallery extends Component {
             loading: true,
         }
     }
-
     componentDidUpdate(prevProps, prevState) {
         if (prevProps.location.pathname !== this.props.location.pathname) {
             this.setState({ItemID: this.props.location.pathname});
@@ -36,14 +35,12 @@ class Gallery extends Component {
     handleResize = (e) => {
         this.setState({windowWidth: window.innerWidth})
     }
-
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
         setTimeout(() => {
             this.setState({loading: false});
-        }, 500)
+        }, 700)
     }
-
     componentWillUnmount() {
         window.addEventListener("resize", this.handleResize);
     }
@@ -109,7 +106,7 @@ class Gallery extends Component {
                         ImageItems.map((item) => (
                             <Grid item={true} key={item.id}>
                                 {loading ? (<Skeleton style={{margin:'1rem'}} animation="wave" variant="rect" height={200} width={this.getImageDisplaySize()}/>) : (
-                                    <img src={item.src} style={{width: this.getImageDisplaySize()}}/>)}
+                                    <img alt={item.title} src={item.src} style={{width: this.getImageDisplaySize()}}/>)}
                             </Grid>
                         ))
                     }

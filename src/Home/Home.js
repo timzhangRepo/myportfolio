@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Grid, ThemeProvider, Paper,} from "@material-ui/core";
-import YouTubeIcon from '@material-ui/icons/YouTube';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import {Button, Grid} from "@material-ui/core";
 import styles from './index.module.css';
 import YouTube from "react-youtube";
 import {NavLink} from "react-router-dom";

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {themeDark} from "../Theme/ThemeDark";
-import {Button, Grid, ThemeProvider, Paper,} from "@material-ui/core";
+import {Grid, ThemeProvider, Paper,} from "@material-ui/core";
 import {BrowserRouter, NavLink, Route, Switch} from 'react-router-dom';
 import SetDesign from "../SetDesign/SetDesign";
 import Home from "../Home/Home";
@@ -12,7 +12,7 @@ export function navgationItems() {
             <NavLink activeClassName={styles.activeNavigationItem} exact to="/">HOME</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/set-design">SET DESIGN</NavLink>
             <NavLink activeClassName={styles.activeNavigationItem} to="/concept-art" >CONCEPT ART</NavLink>
-            <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHICS DESIGN</NavLink>
+            <NavLink activeClassName={styles.activeNavigationItem} to="/graphic-design">GRAPHIC DESIGN</NavLink>
         </div>
     )
 }

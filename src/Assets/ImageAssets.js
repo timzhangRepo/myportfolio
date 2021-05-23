@@ -75,6 +75,7 @@ import ELON13 from '../Assets/SET DESIGN/ELON MUSK-伊隆马斯克/13.webp'
 import ELON14 from '../Assets/SET DESIGN/ELON MUSK-伊隆马斯克/14.webp'
 import ELON15 from '../Assets/SET DESIGN/ELON MUSK-伊隆马斯克/15.webp'
 import ELON16 from '../Assets/SET DESIGN/ELON MUSK-伊隆马斯克/16.webp'
+import ELON17 from '../Assets/SET DESIGN/ELON MUSK-伊隆马斯克/17.webp'
 
 /* Story*/
 import BRAINS from '../Assets/SET DESIGN/BRAIN IN A VAT/Story_Synopsis.txt'
@@ -117,12 +118,13 @@ export const GRAPHICS = [
     {id:'g10', src:GRAPHICS10, title:'10'},
 ]
 export const CONCEPT = [
+    {id:'c6',src:CONCEPT6, title:'6'},
     {id:'c1', src:CONCEPT1, title:'1'},
     {id:'c2', src:CONCEPT2, title:'2'},
     {id:'c3', src:CONCEPT3, title:'3'},
     {id:'c4', src:CONCEPT4, title:'4'},
     {id:'c5', src:CONCEPT5, title:'5'},
-    {id:'c6',src:CONCEPT6, title:'6'}
+
 ]
 
 export const STORY = [
@@ -145,17 +147,25 @@ export const COVERS = [
     {id:'i1', src: INCA1, title: 'INCA KEY / 印卡钥匙'},
 ]
 
+
 export const BRAIN_IN_A_VAT = [
-    {id:'b2', src:BRAIN2, title:'BRAIN IN A VAT / 大脑实验/pic2'},
-    {id:'b3', src:BRAIN3, title:'BRAIN IN A VAT / 大脑实验/pic3'},
-    {id:'b4', src:BRAIN4, title:'BRAIN IN A VAT / 大脑实验/pic4'},
+    {id:'b1', src:BRAIN1, title:'BRAIN IN A VAT / 大脑实验',},
     {id:'b5', src:BRAIN5, title:'BRAIN IN A VAT / 大脑实验/pic5'},
     {id:'b6', src:BRAIN6, title:'BRAIN IN A VAT / 大脑实验/pic6'},
     {id:'b7', src:BRAIN7, title:'BRAIN IN A VAT / 大脑实验/pic7'},
+    {id:'b2', src:BRAIN2, title:'BRAIN IN A VAT / 大脑实验/pic2'},
+    {id:'b3', src:BRAIN3, title:'BRAIN IN A VAT / 大脑实验/pic3'},
+    {id:'b4', src:BRAIN4, title:'BRAIN IN A VAT / 大脑实验/pic4'},
     {id:'b8', src:BRAIN8, title:'BRAIN IN A VAT / 大脑实验/pic8'},
-]
 
+]
 export const WU_SONG_FIGHTS_THE_TIGER = [
+    {id:'w1', src:WU1, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic1'},
+    {id:'w10', src:WU10, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic10'},
+    {id:'w11', src:WU11, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic11'},
+    {id:'w12', src:WU12, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic12'},
+    {id:'w13', src:WU13, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic13'},
+    {id:'w14', src:WU14, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic14'},
     {id:'w2', src:WU2, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic2'},
     {id:'w3', src:WU3, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic3'},
     {id:'w4', src:WU4, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic4'},
@@ -164,14 +174,12 @@ export const WU_SONG_FIGHTS_THE_TIGER = [
     {id:'w7', src:WU7, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic7'},
     {id:'w8', src:WU8, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic8'},
     {id:'w9', src:WU9, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic9'},
-    {id:'w10', src:WU10, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic10'},
-    {id:'w11', src:WU11, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic11'},
-    {id:'w12', src:WU12, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic12'},
-    {id:'w13', src:WU13, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic13'},
-    {id:'w14', src:WU14, title:'WU SONG FIGHTS THE TIGER / 武松打虎/pic14'},
 ]
 
+
+
 export const SUDANESE_RUINS = [
+    {id:'s1', src:SUDAN1, title:'SUDANESE RUINS / 苏丹古城/pic1'},
     {id:'s2', src:SUDAN2, title:'SUDANESE RUINS / 苏丹古城/pic2'},
     {id:'s3', src:SUDAN3, title:'SUDANESE RUINS / 苏丹古城/pic3'},
     {id:'s4', src:SUDAN4, title:'SUDANESE RUINS / 苏丹古城/pic4'},
@@ -181,38 +189,40 @@ export const ELON_MUSK = [
     {id:'e2', src:ELON2, title:'ELON MUSK / 伊隆马斯克/pic2'},
     {id:'e3', src:ELON3, title:'ELON MUSK / 伊隆马斯克/pic3'},
     {id:'e4', src:ELON4, title:'ELON MUSK / 伊隆马斯克/pic4'},
-    {id:'concept6', src:CONCEPT6, title:'ELON MUSK / 伊隆马斯克/pic4'},
+    {id:'e17', src:ELON17, title:'ELON MUSK / 伊隆马斯克/pic16'},
+    {id:'e1', src:ELON1, title:'ELON MUSK / 伊隆马斯克/pic1'},
+    {id:'e11', src:ELON11, title:'ELON MUSK / 伊隆马斯克/pic11'},
+    {id:'e12', src:ELON12, title:'ELON MUSK / 伊隆马斯克/pic12'},
     {id:'e5', src:ELON5, title:'ELON MUSK / 伊隆马斯克/pic5'},
     {id:'e6', src:ELON6, title:'ELON MUSK / 伊隆马斯克/pic6'},
     {id:'e7', src:ELON7, title:'ELON MUSK / 伊隆马斯克/pic7'},
     {id:'e8', src:ELON8, title:'ELON MUSK / 伊隆马斯克/pic8'},
     {id:'e9', src:ELON9, title:'ELON MUSK / 伊隆马斯克/pic9'},
     {id:'e10', src:ELON10, title:'ELON MUSK / 伊隆马斯克/pic10'},
-    {id:'e11', src:ELON11, title:'ELON MUSK / 伊隆马斯克/pic11'},
-    {id:'e12', src:ELON12, title:'ELON MUSK / 伊隆马斯克/pic12'},
     {id:'e13', src:ELON13, title:'ELON MUSK / 伊隆马斯克/pic13'},
     {id:'e14', src:ELON14, title:'ELON MUSK / 伊隆马斯克/pic14'},
     {id:'e15', src:ELON15, title:'ELON MUSK / 伊隆马斯克/pic15'},
     {id:'e16', src:ELON16, title:'ELON MUSK / 伊隆马斯克/pic16'},
-
 ]
 
 export const THE_APARTMENT = [
-    {id:'a2', src:APT2, title:'THE APARTMENT / 公寓谋杀/pic2'},
-    {id:'a3', src:APT3, title:'THE APARTMENT / 公寓谋杀/pic3'},
-    {id:'a4', src:APT4, title:'THE APARTMENT / 公寓谋杀/pic4'},
+    {id:'a1', src:APT1, title:'THE APARTMENT / 公寓谋杀/pic1'},
     {id:'a5', src:APT5, title:'THE APARTMENT / 公寓谋杀/pic5'},
     {id:'a6', src:APT6, title:'THE APARTMENT / 公寓谋杀/pic6'},
     {id:'a7', src:APT7, title:'THE APARTMENT / 公寓谋杀/pic7'},
     {id:'a8', src:APT8, title:'THE APARTMENT / 公寓谋杀/pic8'},
     {id:'a9', src:APT9, title:'THE APARTMENT / 公寓谋杀/pic9'},
+    {id:'a2', src:APT2, title:'THE APARTMENT / 公寓谋杀/pic2'},
+    {id:'a3', src:APT3, title:'THE APARTMENT / 公寓谋杀/pic3'},
+    {id:'a4', src:APT4, title:'THE APARTMENT / 公寓谋杀/pic4'},
 ]
 
 export const JAZZ_WITH_RYAN_GOSLING_LATE_NIGHT_SHOW = [
-    {id:'j2', src:JAZZ2, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic2'},
-    {id:'j3', src:JAZZ3, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic3'},
+    {id:'j1', src:JAZZ1, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic1'},
     {id:'j4', src:JAZZ4, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic4'},
     {id:'j5', src:JAZZ5, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic5'},
+    {id:'j2', src:JAZZ2, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic2'},
+    {id:'j3', src:JAZZ3, title:'JAZZ WITH RYAN GOSLING LATE NIGHT SHOW / 爵士脱口秀/pic3'},
 ]
 
 export const INCA_KEY = [

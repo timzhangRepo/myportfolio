@@ -4,7 +4,6 @@ import GridList from '@material-ui/core/GridList';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import {COVERS} from '../Assets/ImageAssets'
 import styles from './index.module.css'
-import Footer from '../Footer/Footer'
 import {NavLink} from "react-router-dom";
 
 class SetDesign extends Component {
@@ -17,8 +16,6 @@ class SetDesign extends Component {
     handleResize = (e) => {
         this.setState({windowWidth: window.innerWidth});
     };
-
-
     componentDidMount() {
         window.addEventListener("resize", this.handleResize);
     }
@@ -43,7 +40,7 @@ class SetDesign extends Component {
                         <GridList cellHeight={400} cols={numCol}>
                             {COVERS.map((item) => (
                                 <GridListTile key={item.id}>
-                                    <img src={item.src}/>
+                                    <img src={item.src} alt={item.title} />
                                     <NavLink to={{
                                         pathname: '/'+item.id,
                                         state: {ItemID: '/'+item.id}

@@ -9,7 +9,7 @@ class Home extends Component {
     constructor() {
         super();
         this.state = {
-            intro_video_id: 'EYJDIFxpssE',
+            intro_video_id: 'vDQ63ofjr-c',
         }
     }
 
@@ -31,7 +31,7 @@ class Home extends Component {
                 width: '1280px',
                 playerVars: {
                     // https://developers.google.com/youtube/player_parameters
-                    autoplay: 0,
+                    autoplay: 1,
                     loop: 1,
                 }
             }

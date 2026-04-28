@@ -20,7 +20,6 @@ export default function Hero() {
       </div>
       <div className="contact-bar">
         <a href={`mailto:${profile.email}`}>{profile.email}</a>
-        <span>{profile.phone}</span>
         <span>{profile.location[lang]}</span>
         <span>{profile.note[lang]}</span>
         <button

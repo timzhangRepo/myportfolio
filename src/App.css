@@ -80,6 +80,19 @@ body {
   line-height: 1.7;
 }
 
+.read-more {
+  background: none;
+  border: none;
+  color: #0066cc;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
 /* Section headings */
 section h2 {
   font-size: 1.3rem;

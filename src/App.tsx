@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { LanguageProvider } from "./context/LanguageContext";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
@@ -16,6 +17,7 @@ export default function App() {
         <Skills />
         <Education />
       </div>
+      <Analytics />
     </LanguageProvider>
   );
 }

@@ -121,9 +121,15 @@ export const education = {
   ],
 };
 
+export const summary = {
+  en: "I am a Full Stack Software Engineer with four years of experience at Goldman Sachs and a Master's degree from the University of Southern California. Bilingual in English and Chinese, I specialize in modern frontend architecture and building scalable, end-to-end full-stack systems. Most recently, I architected a proprietary Asset Servicing Platform for Global Markets, successfully replacing legacy infrastructure. I am actively researching agentic workflows (Spring AI, LangChain, LangGraph) to fundamentally rethink traditional banking systems and modernize legacy software.",
+  zh: "我是一名全栈软件工程师，拥有四年高盛工作经验及南加州大学硕士学位，中英双语流利。专注于现代前端架构与可扩展全栈系统的设计与开发。近期主导架构了全球市场部内部资产服务平台，成功替代遗留基础设施。目前正积极研究智能体工作流（Spring AI、LangChain、LangGraph），致力于从根本上重构传统银行系统、推动遗留软件现代化。",
+};
+
 export const labels = {
   en: {
     title: "Software Engineer",
+    summary: "Summary",
     experience: "Experience",
     skills: "Skills",
     education: "Education",
@@ -132,6 +138,7 @@ export const labels = {
   },
   zh: {
     title: "软件工程师",
+    summary: "个人简介",
     experience: "工作经历",
     skills: "技术栈",
     education: "教育背景",

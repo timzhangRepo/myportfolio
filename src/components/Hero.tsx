@@ -1,4 +1,4 @@
-import { profile, labels } from "../data/resume";
+import { profile, labels, summary } from "../data/resume";
 import { useLang } from "../context/LanguageContext";
 
 export default function Hero() {
@@ -22,6 +22,7 @@ export default function Hero() {
         <span>{profile.location[lang]}</span>
         <span>{profile.note[lang]}</span>
       </div>
+      <p className="summary">{summary[lang]}</p>
     </section>
   );
 }

@@ -11,8 +11,8 @@ export default function App() {
     <LanguageProvider>
       <div className="container">
         <Hero />
-        <Projects />
         <Experience />
+        <Projects />
         <Skills />
         <Education />
       </div>

@@ -4,7 +4,7 @@ export const profile = {
   name: "Tim Zhang",
   email: "zhangtianchen@yahoo.com",
   phone: "+1 585-360-8297",
-  location: { en: "Salt Lake City, UT, United States", zh: "美国犹他州盐湖城" },
+  location: { en: "Salt Lake City, UT, United States", zh: "美国" },
   note: { en: "H1-B Holder", zh: "H1-B 持有者" },
 };
 
@@ -45,7 +45,7 @@ export const experience = {
     {
       company: "高盛集团",
       title: "软件工程师 – SDE II (Associate)",
-      location: "犹他州盐湖城",
+      location: "",
       period: "2021年12月 – 至今",
       teams: [
         {

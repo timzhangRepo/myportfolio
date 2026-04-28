@@ -35,15 +35,26 @@ export default function Hero() {
           {lang === "en" ? "📅 Schedule a Meeting" : "📅 预约会议"}
         </button>
       </div>
-      <p className="summary">
-        {expanded ? summary[lang] : summary[lang].split(".")[0] + "."}
-        {" "}
-        <button className="read-more" onClick={() => setExpanded(!expanded)}>
-          {expanded
-            ? (lang === "en" ? "Show less" : "收起")
-            : (lang === "en" ? "Read more" : "展开")}
-        </button>
-      </p>
+      {(() => {
+        const delimiter = lang === "en" ? "." : "。";
+        const collapsed = summary[lang].split(delimiter)[0] + delimiter;
+        const truncated = collapsed.length < summary[lang].length;
+        return (
+          <p className="summary">
+            {expanded || !truncated ? summary[lang] : collapsed}
+            {truncated && (
+              <>
+                {" "}
+                <button className="read-more" onClick={() => setExpanded(!expanded)}>
+                  {expanded
+                    ? (lang === "en" ? "Show less" : "收起")
+                    : (lang === "en" ? "Read more" : "展开")}
+                </button>
+              </>
+            )}
+          </p>
+        );
+      })()}
     </section>
   );
 }

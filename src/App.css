@@ -93,6 +93,23 @@ body {
   text-decoration: underline;
 }
 
+.calendly-btn {
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  white-space: nowrap;
+}
+
+.calendly-btn:hover {
+  background: #0052a3;
+}
+
 /* Section headings */
 section h2 {
   font-size: 1.3rem;

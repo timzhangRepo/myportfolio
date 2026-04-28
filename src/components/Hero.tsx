@@ -23,6 +23,16 @@ export default function Hero() {
         <span>{profile.phone}</span>
         <span>{profile.location[lang]}</span>
         <span>{profile.note[lang]}</span>
+        <button
+          className="calendly-btn"
+          onClick={() =>
+            (window as any).Calendly?.initPopupWidget({
+              url: "https://calendly.com/tim-zhang-f5o9/30min",
+            })
+          }
+        >
+          {lang === "en" ? "📅 Schedule a Meeting" : "📅 预约会议"}
+        </button>
       </div>
       <p className="summary">
         {expanded ? summary[lang] : summary[lang].split(".")[0] + "."}

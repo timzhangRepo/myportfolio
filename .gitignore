@@ -14,6 +14,7 @@ dist-ssr
 
 # Private local docs
 MAINTAINER.md
+OUTREACH_TEMPLATES.md
 
 # Editor directories and files
 .vscode/*

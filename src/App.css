@@ -94,7 +94,7 @@ body {
 }
 
 .calendly-btn {
-  background: #0066cc;
+  background: #222;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -107,7 +107,7 @@ body {
 }
 
 .calendly-btn:hover {
-  background: #0052a3;
+  background: #444;
 }
 
 /* Section headings */

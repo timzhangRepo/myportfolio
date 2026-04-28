@@ -19,9 +19,11 @@ export default function Hero() {
         </button>
       </div>
       <div className="contact-bar">
-        <a href={`mailto:${profile.email}`}>{profile.email}</a>
-        <span>{profile.location[lang]}</span>
-        <span>{profile.note[lang]}</span>
+        <div className="contact-info">
+          <a href={`mailto:${profile.email}`}>{profile.email}</a>
+          <span>{profile.location[lang]}</span>
+          <span>{profile.note[lang]}</span>
+        </div>
         <button
           className="calendly-btn"
           onClick={() =>

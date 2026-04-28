@@ -2,7 +2,7 @@
   <rect width="64" height="64" rx="12" fill="#222"/>
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
         font-family="-apple-system, 'Segoe UI', Roboto, sans-serif"
-        font-size="28" font-weight="700" fill="#fff" letter-spacing="-1">
-    Tim
+        font-size="34" font-weight="700" fill="#fff" letter-spacing="-1">
+    TZ
   </text>
 </svg>

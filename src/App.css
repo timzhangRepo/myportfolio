@@ -67,9 +67,16 @@ body {
 .contact-info {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 20px;
+  align-items: center;
+  gap: 8px 0;
   font-size: 0.9rem;
   color: #444;
+}
+
+.contact-info > * + *::before {
+  content: "·";
+  margin: 0 10px;
+  color: #bbb;
 }
 
 .contact-info a {

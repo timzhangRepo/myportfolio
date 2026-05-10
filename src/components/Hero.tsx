@@ -1,11 +1,9 @@
-import { useState } from "react";
 import { profile, labels, summary } from "../data/resume";
 import { useLang } from "../context/LanguageContext";
 
 export default function Hero() {
   const { lang, toggle } = useLang();
   const l = labels[lang];
-  const [expanded, setExpanded] = useState(false);
 
   return (
     <section id="hero">
@@ -44,26 +42,7 @@ export default function Hero() {
           </button>
         </div>
       </div>
-      {(() => {
-        const delimiter = lang === "en" ? "." : "。";
-        const collapsed = summary[lang].split(delimiter)[0] + delimiter;
-        const truncated = collapsed.length < summary[lang].length;
-        return (
-          <p className="summary">
-            {expanded || !truncated ? summary[lang] : collapsed}
-            {truncated && (
-              <>
-                {" "}
-                <button className="read-more" onClick={() => setExpanded(!expanded)}>
-                  {expanded
-                    ? (lang === "en" ? "Show less" : "收起")
-                    : (lang === "en" ? "Read more" : "展开")}
-                </button>
-              </>
-            )}
-          </p>
-        );
-      })()}
+      <p className="summary">{summary[lang]}</p>
     </section>
   );
 }

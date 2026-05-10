@@ -24,16 +24,25 @@ export default function Hero() {
           <span>{profile.location[lang]}</span>
           <span>{profile.note[lang]}</span>
         </div>
-        <button
-          className="calendly-btn"
-          onClick={() =>
-            (window as any).Calendly?.initPopupWidget({
-              url: "https://calendly.com/tim-zhang-f5o9/30min",
-            })
-          }
-        >
-          {lang === "en" ? "📅 Schedule a Meeting" : "📅 预约会议"}
-        </button>
+        <div className="hero-actions">
+          <a
+            className="download-btn"
+            href="/TimZhang_Resume.pdf"
+            download="TimZhang_Resume.pdf"
+          >
+            ↓ {l.downloadResume}
+          </a>
+          <button
+            className="calendly-btn"
+            onClick={() =>
+              (window as any).Calendly?.initPopupWidget({
+                url: "https://calendly.com/tim-zhang-f5o9/30min",
+              })
+            }
+          >
+            {lang === "en" ? "📅 Schedule a Meeting" : "📅 预约会议"}
+          </button>
+        </div>
       </div>
       {(() => {
         const delimiter = lang === "en" ? "." : "。";

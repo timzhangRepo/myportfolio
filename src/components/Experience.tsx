@@ -15,15 +15,22 @@ export default function Experience() {
             <span className="company">{job.company}</span>
             <span className="period">{job.period}</span>
           </div>
-          <div className="job-title">{job.title}{job.location ? ` — ${job.location}` : ""}</div>
-          {job.teams.map((team) => (
-            <div key={team.name} className="team">
-              <h4>{team.name}</h4>
-              <ul>
-                {team.bullets.map((b, i) => (
-                  <li key={i}>{b}</li>
-                ))}
-              </ul>
+          <div className="job-title">
+            {job.title}{job.location ? ` — ${job.location}` : ""}
+          </div>
+          {job.divisions.map((division) => (
+            <div key={division.name} className="division">
+              <h3 className="division-name">{division.name}</h3>
+              {division.teams.map((team) => (
+                <div key={team.name} className="team">
+                  <h4>{team.name}</h4>
+                  <ul>
+                    {team.bullets.map((b, i) => (
+                      <li key={i}>{b}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           ))}
         </div>

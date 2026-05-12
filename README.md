@@ -71,3 +71,6 @@ export default defineConfig([
   },
 ])
 ```
+
+## Windows Running
+$env:PATH = "C:\Program Files\Git\cmd;" + $env:PATH

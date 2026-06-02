@@ -192,7 +192,7 @@ export const projects: Record<Lang, Project[]> = {
   en: [
     {
       name: "Autonomous AI Assistant Agent",
-      githubUrl: "https://github.com/timzhang642",
+      githubUrl: "https://github.com/timzhangRepo/project-voyage",
       bullets: [
         "Built a ReAct-loop agent (Claude Sonnet) on the Claude ecosystem: thinks, calls tools, observes, re-plans — orchestrated against four custom MCP servers handling data ingestion, semantic ranking, communication, and automated task execution.",
         "Used MCP as the tool boundary to keep capabilities composable and the agent stack-agnostic; added a human-in-the-loop approval gate so irreversible actions resume only on explicit user confirmation.",
@@ -203,7 +203,7 @@ export const projects: Record<Lang, Project[]> = {
   zh: [
     {
       name: "自主 AI 助手 Agent",
-      githubUrl: "https://github.com/timzhang642",
+      githubUrl: "https://github.com/timzhangRepo/project-voyage",
       bullets: [
         "基于 Claude 生态系统构建 ReAct 循环 Agent（Claude Sonnet）：具备思考、工具调用、观察、重规划能力——编排对接四个自定义 MCP 服务器，分别负责数据摄取、语义排序、通讯与自动化任务执行。",
         "以 MCP 作为工具边界，保持能力可组合性与 Agent 的技术栈无关性；引入人工审批关卡，确保不可逆操作仅在用户明确确认后方可继续执行。",

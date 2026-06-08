@@ -270,12 +270,45 @@ section h2 {
   border: 1px solid #e8e8e8;
   border-radius: 8px;
   overflow: hidden;
-  -webkit-overflow-scrolling: touch;
 }
 
 .iframe-wrapper iframe {
   display: block;
   border: none;
+}
+
+/* Mobile: open in Notion card */
+.notion-open-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px 24px;
+  background: #fff;
+  text-decoration: none;
+  color: #222;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.notion-open-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-color: #bbb;
+}
+
+.notion-open-icon {
+  font-size: 1.4rem;
+}
+
+.notion-open-text {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.notion-open-arrow {
+  font-size: 1rem;
+  color: #888;
 }
 
 /* Post list */

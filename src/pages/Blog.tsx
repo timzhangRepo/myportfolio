@@ -1,26 +1,34 @@
-import { useLang } from "../context/LanguageContext";
+import { Link } from "react-router-dom";
+import { posts } from "../data/posts";
+
+function formatDate(dateStr: string) {
+  return new Date(dateStr).toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+}
 
 export default function Blog() {
-  const { lang } = useLang();
-
   return (
     <div className="blog-page">
       <div className="blog-header">
-        <h2>{lang === "en" ? "Blog" : "博客"}</h2>
+        <h2>Blog</h2>
         <p className="blog-desc">
-          {lang === "en"
-            ? "Notes and insights on software engineering, AI, and system design."
-            : "关于软件工程、AI 与系统设计的思考与笔记。"}
+          Notes on software engineering, AI, and system design.
         </p>
       </div>
-      <iframe
-        src="https://fast-pelican-64d.notion.site/ebd//379d70b722d380ca9474c5f9a6fdbf98"
-        width="100%"
-        height="800"
-        frameBorder="0"
-        allowFullScreen
-        title="Blog"
-      />
+
+      <div className="post-list">
+        {posts.map((post) => (
+          <Link to={`/blog/${post.slug}`} key={post.slug} className="post-card">
+            <div className="post-card-meta">{formatDate(post.date)}</div>
+            <h3 className="post-card-title">{post.title}</h3>
+            <p className="post-card-desc">{post.description}</p>
+            <span className="post-card-read">Read →</span>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

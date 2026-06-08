@@ -272,6 +272,92 @@ section h2 {
   display: block;
 }
 
+/* Post list */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post-card {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 20px 24px;
+  background: #fff;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.post-card:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-color: #bbb;
+}
+
+.post-card-meta {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.post-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 6px;
+}
+
+.post-card-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.post-card-read {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Individual post */
+.back-link {
+  display: inline-block;
+  font-size: 0.88rem;
+  color: #555;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.back-link:hover {
+  color: #222;
+}
+
+.post-header {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.post-meta {
+  font-size: 0.82rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+.post-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.post-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* Education */
 .edu-item {
   margin-bottom: 16px;

@@ -266,10 +266,16 @@ section h2 {
   color: #555;
 }
 
-.blog-page iframe {
+.iframe-wrapper {
   border: 1px solid #e8e8e8;
   border-radius: 8px;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.iframe-wrapper iframe {
   display: block;
+  border: none;
 }
 
 /* Post list */

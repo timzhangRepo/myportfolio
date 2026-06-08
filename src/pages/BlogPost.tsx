@@ -29,14 +29,18 @@ export default function BlogPost() {
         <h1 className="post-title">{post.title}</h1>
         <p className="post-desc">{post.description}</p>
       </div>
-      <iframe
-        src={post.notionEmbedUrl}
-        width="100%"
-        height="900"
-        frameBorder="0"
-        allowFullScreen
-        title={post.title}
-      />
+      <div className="iframe-wrapper">
+        <iframe
+          src={post.notionEmbedUrl}
+          width="100%"
+          height="900"
+          frameBorder="0"
+          allowFullScreen
+          title={post.title}
+          sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-top-navigation-by-user-activation"
+          referrerPolicy="no-referrer"
+        />
+      </div>
     </div>
   );
 }

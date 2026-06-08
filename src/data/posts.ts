@@ -14,6 +14,6 @@ export const posts: Post[] = [
     description:
       "Personal notes on RAG pipelines, LLM architecture, agentic systems, and applied AI in production.",
     notionEmbedUrl:
-      "https://fast-pelican-64d.notion.site/ebd//379d70b722d380ca9474c5f9a6fdbf98",
+      "https://fast-pelican-64d.notion.site/ebd/379d70b722d380ca9474c5f9a6fdbf98",
   },
 ];

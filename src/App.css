@@ -212,6 +212,66 @@ section h2 {
   color: #333;
 }
 
+/* Nav */
+.site-nav {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 24px 0;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #555;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.nav-link:hover {
+  color: #222;
+}
+
+.nav-link.active {
+  color: #222;
+  border-bottom-color: #222;
+}
+
+/* Blog */
+.blog-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.blog-header {
+  margin-bottom: 28px;
+}
+
+.blog-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-bottom: 2px solid #222;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.blog-desc {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.blog-page iframe {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  display: block;
+}
+
 /* Education */
 .edu-item {
   margin-bottom: 16px;

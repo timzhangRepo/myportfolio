@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { LanguageProvider } from "./context/LanguageContext";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
@@ -32,6 +33,7 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
         <Analytics />
+        <SpeedInsights />
       </LanguageProvider>
     </BrowserRouter>
   );
